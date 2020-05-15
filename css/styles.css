@@ -31,6 +31,7 @@ body {
 
 li, ol, ul {
   padding: 0;
+  margin-top: 25px;
   display: inline-block;
 }
 
@@ -54,6 +55,9 @@ button {
   -o-transition: var(--transition);
   transition: var(--transition);
 }
+
+
+
 
 .main-container {
   display: flex;
@@ -89,13 +93,15 @@ button {
 }
 
 .space {
-  width: 15px;
+  width: 45px;
 }
 
 .show {
-  color: #000;
+  color: #fff;
   background-color: #76CE82;
+  transition-duration: .5s;
 }
+
 
 /* Keyboard */
 
@@ -109,7 +115,21 @@ button {
   border-radius: 5px;
   font-size: var(--font-size-medium);
   color: #FFFFFF;
+  animation-name: pop;
+  animation-duration: .2s;
 }
+
+
+/* .chosen & keyframes (named "pop") is the animation used for chosen letters */
+@keyframes pop {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.5);}
+  100% {transform: scale(1);}
+}
+
+
+
+
 
 .btn__reset {
   padding: 8px;
