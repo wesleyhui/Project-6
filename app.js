@@ -1,3 +1,4 @@
+//Get Elements from HTML
 const qwerty = document.getElementById('qwerty');
 const phrase = document.getElementById('phrase');
 const phraseList = document.getElementById('phraseList');
@@ -8,6 +9,8 @@ let missed = 0;
 buttonReset.addEventListener('click',
   (e) => {overlay.style.display = 'none';});
 
+
+  
 //Add Phrases
 const phrases = [
   'To be or not to be',
