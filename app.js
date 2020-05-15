@@ -90,14 +90,14 @@ function checkWin() {
   if (phraseLetters.length === guessedLetters.length){
     overlay.className = 'win';
     overlay.style.display = 'flex';
-    overlay.firstElementChild.textContent = 'You guessed the phrase!';
-    buttonReset.textContent = 'Play Again';
+    overlay.firstElementChild.textContent = 'You win!';
+    buttonReset.textContent = 'Try again?';
 // Checks if user has 5 incorrect guesses and shows the LOSE screen
   } else if (missed > 4) {
     overlay.className = 'lose';
     overlay.style.display = 'flex';
-    overlay.firstElementChild.textContent = 'You are out of guesses';
-    buttonReset.textContent = 'Play Again';
+    overlay.firstElementChild.textContent = 'You lose :(';
+    buttonReset.textContent = 'Try again?';
   }
 }
 
